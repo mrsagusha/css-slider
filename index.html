@@ -8,37 +8,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="slider">
-        <div class="slides">
-
-            <input type="radio" name="button" id="button1" checked>
-            <input type="radio" name="button" id="button2">
-            <input type="radio" name="button" id="button3">
-            <input type="radio" name="button" id="button4">
-
-            <div class="slide slide1">
-                <img src="../css-slider/assets/human.jpg" alt="Human" class="">
-                <p class="mem__text">Когда на пластилине написано 3-5 лет, а ты съел весь всего за 20 минут</p>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slides">
+    
+                <input type="radio" name="button" id="button1" checked>
+                <input type="radio" name="button" id="button2">
+                <input type="radio" name="button" id="button3">
+                <input type="radio" name="button" id="button4">
+    
+                <div class="slide slide1">
+                    <img src="../css-slider/assets/human.jpg" alt="Human" class="">
+                    <p class="mem__text">Когда на пластилине написано 3-5 лет, а ты съел весь всего за 20 минут</p>
+                </div>
+                <div class="slide">
+                    <img src="../css-slider/assets/metro.jpg" alt="Metro" class="">
+                    <p class="mem__text">Когда с пацанами вышли посмотреть на салют</p>
+                </div>
+                <div class="slide">
+                    <img src="../css-slider/assets/skeleton.png" alt="Skeleton" class="">
+                    <p class="mem__text">Когда доктор забыл сказать дышите</p>
+                </div>
+                <div class="slide">
+                    <img src="../css-slider/assets/children.jpg" alt="Children" class="">
+                    <p class="mem__text">Когда у Ахмеда что-то тикает в портфеле</p>
+                </div>
             </div>
-            <div class="slide">
-                <img src="../css-slider/assets/metro.jpg" alt="Metro" class="">
-                <p class="mem__text">Когда с пацанами вышли посмотреть на салют</p>
-            </div>
-            <div class="slide">
-                <img src="../css-slider/assets/skeleton.png" alt="Skeleton" class="">
-                <p class="mem__text">Когда доктора забыл сказать дышите</p>
-            </div>
-            <div class="slide">
-                <img src="../css-slider/assets/children.jpg" alt="Children" class="">
-                <p class="mem__text">Когда у Ахмеда что-то тикает в портфеле</p>
+            <div class="navigation">
+                <div class="nav">
+                    <label for="button1" class="bar"></label>
+                    <label for="button2" class="bar"></label>
+                    <label for="button3" class="bar"></label>
+                    <label for="button4" class="bar"></label>
+                </div>
             </div>
         </div>
-        <div class="navigation">
-            <div class="nav">
-                <label for="button1" class="bar"></label>
-                <label for="button2" class="bar"></label>
-                <label for="button3" class="bar"></label>
-                <label for="button4" class="bar"></label>
+        <div class="tools">
+            <div class="tools__left">
+                <p class="tools__left__text">Сохранённые фотографии</p>
+            </div>
+            <div class="tools__right">
+                <div class="tools__right__item">
+                    <p class="tools__right__text">Поделиться</p>
+                </div>
+                <div class="tools__right__item dot">
+                    <p class="tools__right__text">.</p>
+                </div>
+                <div class="tools__right__item">
+                    <p class="tools__right__text">Удалить</p>
+                </div>
+                <div class="tools__right__item dot">
+                    <p class="tools__right__text">.</p>
+                </div>
+                <div class="tools__right__item">
+                    <p class="tools__right__text">Ещё</p>
+                </div>
+                <div class="symbol"></div>
             </div>
         </div>
     </div>
