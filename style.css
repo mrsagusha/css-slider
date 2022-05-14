@@ -9,6 +9,10 @@ body {
     justify-content: center;
 }
 
+.tools__mobile {
+    display: none;
+}
+
 .wrapper {
     background-color: #222222;
     margin-top: 2em;
@@ -280,4 +284,52 @@ input[name='button'] {
     font-size: 1em;
     padding-left: 0.8em;
     padding-top: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        background-color: black;
+    }
+
+    .side__box {
+        display: none;
+    }
+
+    .navigation {
+        justify-content: center;
+        margin-top: -5.3em;
+    } 
+
+    .tools__mobile {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 3em 2em 3em;
+    }
+
+    .image1 {
+        width: 2.5em;
+        height: 1.5em;
+        padding-top: 0.25em;
+    }
+
+    .image2 {
+        width: 2.5em;
+        height: 2em;
+    }
+
+    .image3 {
+        width: 2.5em;
+        height: 2em;
+    }
+    
+
+    .tools__left {
+        display: none;
+    }
+
+    .tools__right {
+        display: none;
+    }
 }
