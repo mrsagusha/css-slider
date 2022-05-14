@@ -40,10 +40,32 @@ body {
     padding-left: 2em;
 }
 
+.dot:hover {
+    color: #707070;
+    cursor: alias;
+}
+
+.tools__left__text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .tools__right__text {
     color: #707070;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
+}
+
+.tools__right__text:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.symbol:hover {
+    border-left: 0.05em #fff solid;
+    padding: 0.07em;
+    border-bottom: 0.05em #fff solid;
+    cursor: pointer;
 }
 
 .dot {
@@ -87,28 +109,37 @@ body {
 
 .mem__text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    text-align: center;
+    font-size: 1em;
     align-items: center;
     background-color: #fff;
     display: inline-block;
     height: 2.3em;
+    margin-left: 0.5em;
 }
 
+.space {
+    height: 3.5em;
+}
+
+label {
+    background-color: #fff;
+}
 
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     background-color: #fff;
+    margin-top: -3.3em;
 }
 
 .nav {
     display: flex;
+    background-color: white;
 }
 
 .bar {
     height: 0.8em;
-    width: 2em;
+    width: 0.8em;
     margin: 1em;
     cursor: pointer;
     background-color: black;
@@ -141,4 +172,78 @@ input[name='button'] {
 
 #button4:checked ~ .slide1 {
     margin-left: -75%;
+}
+
+.side__box {
+    height: 55em; 
+    width: 20em;
+    background-color: #fff;
+    margin-top: 2em;
+}
+
+.side__name {
+    background-color: #fafbfc;
+    border-bottom: 0.1em #dce1e6 solid;
+    height: 3em;
+    display: flex;
+    padding: 0.7em 0 0 0.7em;
+}
+
+.side__photo {
+    margin-right: 0.7em;
+}
+
+.photo {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.name {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #2a58a4;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.date {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #818c99;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.side__tools {
+    height: 4em;
+    border-bottom: 0.1em #dce1e6 solid;
+}
+
+.side__comments {
+    border-bottom: 0.1em #dce1e6 solid;
+    height: 44em;
+}
+
+.side__comment {
+    display: flex;
+    align-items: center;
+}
+
+#photo {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.side__photo2 {
+    padding: 0.5em 0 0 1em;
+}
+
+.comment {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #818c99;
+    font-weight: normal;
+    font-size: 1em;
+    padding-left: 0.5em;
 }
