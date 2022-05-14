@@ -163,7 +163,7 @@ label {
 }
 
 input[name='button'] {
-    visibility: hidden;
+    display: none;
     margin-left: -0.97em;
 }
 
