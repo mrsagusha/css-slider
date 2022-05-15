@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 11vw;
+    margin-top: 9vw;
 }
 
 .tools__right {
@@ -135,7 +135,7 @@ label {
     display: flex;
     justify-content: end;
     background-color: #fff;
-    margin-top: -3.3em;
+    margin-top: -5.3em;
 }
 
 .nav {
@@ -144,22 +144,27 @@ label {
 }
 
 .bar {
-    height: 0.8em;
-    width: 0.8em;
-    margin: 1em;
+    height: 2.8em;
+    width: 2.8em;
+    margin: 0.5em;
     cursor: pointer;
-    background-color: black;
-    opacity: .1;
-    border-radius: 10px;
     transition: all .4s ease;
 }
 
 .bar:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .bar:active {
     opacity: .8;
+}
+
+.inner__bar {
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    background-color: rgb(207, 205, 205);
+    margin: 23% 25% 20% 18%;
 }
 
 input[name='button'] {
@@ -167,21 +172,33 @@ input[name='button'] {
     margin-left: -0.97em;
 }
 
-#button1:checked ~ .slide1 {
+#button1:checked ~ .slides .slide1 {
     margin-left: 0%;
 }
 
 
-#button2:checked ~ .slide1 {
+#button2:checked ~ .slides .slide1 {
     margin-left: -25%;
 }
 
-#button3:checked ~ .slide1 {
+
+#button3:checked ~ .slides .slide1 {
     margin-left: -50%;
 }
 
-#button4:checked ~ .slide1 {
+#button4:checked ~ .slides .slide1 {
     margin-left: -75%;
+}
+
+#button1:checked ~ .navigation .nav label[for=button1] .inner__bar,
+#button2:checked ~ .navigation .nav label[for=button2] .inner__bar,
+#button3:checked ~ .navigation .nav label[for=button3] .inner__bar,
+#button4:checked ~ .navigation .nav label[for=button4] .inner__bar {
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    background-color: black;
+    margin: 23% 25% 20% 25%;
 }
 
 .side__box {
@@ -297,7 +314,6 @@ input[name='button'] {
 
     .navigation {
         justify-content: center;
-        margin-top: -12.3em;
     } 
 
     .tools__mobile {
